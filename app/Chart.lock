@@ -1,0 +1,6 @@
+dependencies:
+- name: rollout-bluegreen
+  repository: file://charts/rollout-bluegreen
+  version: 0.1.0
+digest: sha256:ca302e48705f43bcb1252cb8c4ffe373e9b92a9ddc5f9aa3fdf6a8aaf7b109c1
+generated: "2024-11-13T21:20:18.22835+09:00"

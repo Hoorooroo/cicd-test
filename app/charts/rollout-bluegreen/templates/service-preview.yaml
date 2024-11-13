@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: {{ .Release.Name }}-bluegreen-preview
+spec:
+  selector:
+    app: {{ .Release.Name }}-bluegreen
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
