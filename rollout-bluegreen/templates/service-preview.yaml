@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: rollout-bluegreen-preview
+  name: {{ .Release.Name }}-bluegreen-preview
 spec:
   type: NodePort  # NodePort로 변경하여 외부 접근 가능
   selector:
@@ -11,3 +11,4 @@ spec:
       port: 80
       targetPort: 8080
       nodePort: 30081  # Preview 서비스 포트 (임의 설정)
+

@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: rollout-bluegreen-active
+  name: {{ .Release.Name }}-bluegreen-active
 spec:
   type: NodePort  # NodePort로 변경하여 외부 접근 가능
   selector:
