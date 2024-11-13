@@ -6,7 +6,7 @@ replicaCount: 2
 
 image:
   repository: argoproj/rollouts-demo
-  tag: "blue"
+  tag: "green"
 
 strategy:
   autoPromotionEnabled: false
